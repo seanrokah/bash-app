@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+echo -n "Please Enter the first number: ";read n1
+echo -n "Please enter the seconed number: ";read n2
+
+function add_add {
+let sum="$n1 + $n2"
+let Multiplier="$n1 * $n2"
+}
+add_add
+echo "sum : $sum"
+echo "Multiplier : $Multiplier"
+
+
+
+
+

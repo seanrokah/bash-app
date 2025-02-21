@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+clear
+echo "Hello to Add\Multiplier Tool"
+echo "Numbers Must be between 1-100"
+
+echo -n "Please Enter the first number: ";read n1
+echo -n "Please enter the seconed number: ";read n2
+
+if [ "$n1" -lt 100 -a "$n1" -gt 1 -a "$n2" -lt 100 -a "$n2" -gt 1  ];then
+echo "your free to go numbers are in the range (1-100)"
+else
+echo "number must be in range (1-100)"
+exit 1
+fi
+
+function add_add {
+let sum="$n1 + $n2"
+let Multiplier="$n1 * $n2"
+if [ "$sum" == "$Multiplier" ];then
+ echo "Congrats Number IS The same"
+fi
+}
+
+add_add
+echo "sum : $sum"
+echo "Multiplier : $Multiplier"

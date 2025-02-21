@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+echo "Hello to Add\Multiplier Tool"
+echo "Numbers Must be between 1-100"
+
+echo -n "Please Enter the first number: ";read n1
+echo -n "Please enter the seconed number: ";read n2
+
+if [ "$n1" -lt 100 -a "$n1" -gt 1 -a "$n2" -lt 100 -a "$n2" -gt 1  ];then
+echo "your free to go"
+else
+echo "number must be in range"
+exit 1
+fi
+
+function add_add {
+let sum="$n1 + $n2"
+let Multiplier="$n1 * $n2"
+}
+
+add_add
+echo "sum : $sum"
+echo "Multiplier : $Multiplier"

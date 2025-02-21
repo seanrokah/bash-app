@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+Default_Setting=$(shopt -p nocasematch)
+
+shopt -s nocasematch
+
+echo  "Enter your fav Video Game from the list"
+sleep 2
+echo "Call of duty, Battlefield, MapleStory, Diablo, GTA"
+echo "Type_Here";read Video_Game
+
+
+case "$Video_Game" in
+	"Call of duty")
+	echo "Best Shooter"
+	;;
+	"Diablo")
+	echo "Best MMORPG"
+	;;
+	"MapleStory")
+	echo "Nostalgy"
+	;;
+	*)
+	echo "i dont recognize the video_game"
+esac
+
+eval "$Default_Setting"
